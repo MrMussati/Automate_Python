@@ -1,13 +1,12 @@
 import os
 import time
 
-
-
-
 ## color
 yellow = '\033[1;33m'
 green = '\033[1;32m'
 white = '\033[1;37m'
+
+##  apresentar o chatbot
 
 def processar_resposta(resposta, nome):
     if resposta == '1':
