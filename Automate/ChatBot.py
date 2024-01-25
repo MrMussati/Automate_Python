@@ -26,7 +26,7 @@ def processar_resposta(resposta, nome):
 
 
     elif resposta == '3':
-        print(green + f'{os.linesep}{nome},Based on our own research and listening to customers, the most satisfied users took a 70mg dose for 21 days straight. Consistency is key to CBD, so give it a go for 21 days; if you are still unsure then contact our CBD mentors who will be happy to advise you further.{os.linesep}' + white)
+        print(green + f'{os.linesep}{nome}, Based on our own research and listening to customers, the most satisfied users took a 70mg dose for 21 days straight. Consistency is key to CBD, so give it a go for 21 days; if you are still unsure then contact our CBD mentors who will be happy to advise you further.{os.linesep}' + white)
 
         time.sleep(1)
         
@@ -61,11 +61,21 @@ def start():
 
     while True :
         ## oferecer o menu de opcoes 
-        resposta = input ( f'What would you like to know today?{os.linesep}[1] - Will CBD get me high?{os.linesep}[2] - Are CBD products tested on animals?{os.linesep}[3] - I have been using CBD for a week now, why is it not working?{os.linesep}[4] - What strength CBD would you recommend?{os.linesep}[5] - Can I use CBD with medication?{os.linesep}----- INSANA FLOR CHAT ------{os.linesep}' )
+        resposta = input ( f'What would you like to know ?{os.linesep}[1] - Will CBD get me high?{os.linesep}[2] - Are CBD products tested on animals?{os.linesep}[3] - I have been using CBD for a week now, why is it not working?{os.linesep}[4] - What strength CBD would you recommend?{os.linesep}[5] - Can I use CBD with medication?{os.linesep}----- INSANA FLOR CHAT ------{os.linesep}' )
         # Processar a resposta enviada
         processar_resposta(resposta, nome)
         
-        time.sleep(1)
 
+        opcao = input (white + " Would you like to know anything else? [Y/N]")
+        if opcao.lower() == 'y':
+            print(white + 'Okay, lets continue')
+
+        time.sleep(1)
+        os.system('cls')
+
+        if opcao.lower() == "n":
+            print(white + 'Okay, see you later')
+            break
+            
 if __name__ == '__main__':
     start()
