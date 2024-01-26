@@ -1,10 +1,10 @@
 #importar as biblioteca
 from instabot import Bot, utils
-
+import time
 
 bot = Bot()
-bot.login(username="dailyofgrow", password="Cannabis1533") 
-
+bot.login(username=" dailyofgrow@gmail.com", password=" Cannabis1533") 
+time.sleep = 5
 # coletar o nome das pessaos que voce segue mas te seguem de volta 
 file = utils.file("followers.txt")
 
@@ -25,5 +25,7 @@ for user in non_followers:
 file.save_list(non_followers_names, "non_followers.txt")
 
 
-#bot.upload_photo("C:/Users/Usuario/Desktop/Python/Automation_project/IMG_20210909_155544.jpg", caption="Teste de automação com python") 
+time.sleep(5)   
+
+bot.upload_photo("C:/Users/Usuario/Desktop/Python/Automation_project/IMG_20210909_155544.jpg", caption="Teste de automação com python") 
 
