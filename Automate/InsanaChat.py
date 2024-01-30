@@ -45,7 +45,7 @@ def processar_resposta(resposta, nome):
         time.sleep(1)
         
     else:
-        print(white + 'Just Type only 1,2,4 and 5 ')    
+        print(white + 'Just Type only 1,2,3,4 and 5 ')    
 
 
 def start():
